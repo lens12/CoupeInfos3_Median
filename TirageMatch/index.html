@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <style type="text/css">
+        /* style dans la partie body */
+        
+        body {
+            background-image: url(img/backA.jpg);
+            background-size: cover;
+            font-family: calibri;
+            font-size: 16px;
+            color: white;
+        }
+        /* position et largeur du texte  */
+        
+        .textInfo {
+            margin: 10px;
+            padding: 10px;
+            width: 50%;
+        }
+        /* image grosseur et position  */
+        
+        .imag {
+            margin: 10px;
+            padding: 10px;
+            width: 45%;
+            position: fixed;
+            margin-left: 50%;
+        }
+        /* style dans le Bouton demarer   */
+        
+        .btn-btn-succes {
+            height: 40px;
+            width: 18%;
+            border-radius: 10px;
+            border-color: white;
+            background: none;
+            color: white;
+            background-color: rgba(2, 2, 141, 0.692);
+        }
+        
+        .btn-btn-succes:hover {
+            color: rgb(223, 209, 209);
+            background-color: rgba(2, 2, 141, 0.589);
+        }
+        
+        .help {
+            display: flex;
+        }
+        /* PARTIE RESPONTIVE */
+        
+        @media (max-width:700px) {
+            .textInfo {
+                width: 90%;
+            }
+            .help {
+                display: inline-block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- creation div pour les deux -->
+    <div class="help">
+
+        <!-- la Partie texte explications -->
+
+        <div class="textInfo">
+            <center>
+                <img src="img/coupe.png" width="20%">
+                <P>
+                    <b>COUPE 3<sup>ème</sup> INFOS</b> est un tournoi de football organise par les étudiants de la 3em année Sciences informatiques à l’Université INUKA. Le groupe <b>LENS_NERLS_MICHENKA</b> est invité à développer un site web en PHP (application
+                    web) pouvant faire la gestion du tirage au sort, la gestion des classements et la gestion des confrontations (Premier et Deuxième Tours). Ce tournoi comprend huit (8) équipes , Deux (2) groupes, Quatre (4) équipes par groupes.
+
+                </P>
+
+                <!-- Comment utiliser l'application  -->
+                <h3>
+                    Comment Utiliser l’application ?
+                </h3>
+
+                <p>
+                    <li>Cliquez sur <b>« DEMARER »</b> Pour commencer.</li>
+                </p>
+                <P>
+                    <li> Cliquez sur le bouton
+                        <B>« TIRAGE »</B> vous pouvez faire un tirage au sort de manière aléatoire. Cependant les Equipes qui se trouve dans un même Lot ne sera pas dans un même groupe.</li>
+
+                </P>
+
+                <P>
+                    <li> Après le <b>« TIRAGE »</b> les groupe seront présentés dans un tableau.</li>
+                </P>
+
+                <P>
+                    <li> Cliquez sur le bouton <b>« CLASSEMENT DU MATCH »</b> vous pouvez voir les affiches des Matchs du premier tour .Cliquez sur le button jouer pour afficher les scores u match les scores sont aleatoires entre "0 et 9"</li>
+                </P>
+
+                <P>
+                    <li>Après les Matchs de la première tour, le classement pour chaque groupe sera présenté :</li>
+                    <P>
+                        <li><b>MJ</b>=Match Joué, <b>MG</b>=Match Gagné, <b>MN</b>=Match Nul, <b>MP</b>=Match Perdu, <b>BP</b>=But Pour, <b>BC</b>=But Contre, <b>Dif</b>=Différence entre but marqué et but encaissé.</li>
+                        <p>
+                            <li><b>Match gagné=3 points, Match nul= 1 point, Match perdu= 0 point.</b></li>
+                        </p>
+                    </P>
+                </P>
+
+                <P>
+                    <li>Après les classements pour la <b>« DEMI – FINAL »</b> sera présenté.</li>
+                </P>
+
+                <P>
+                    <li>Après les classements pour la <b>« TROISIEME PLACE »</b> sera présenté.</li>
+                </P>
+
+                <P>
+                    <li> La grande <b>« FINAL »</b> sera présenté.</li>
+                </P>
+
+
+                <!-- Placement du  bouton demarer -->
+
+                <a href="Tirage.php" class="btn-btn-succes"> <input type="submit" name="submit" value="DEMARER" class="btn-btn-succes"></a>
+                </br>
+
+        </div>
+        </center>
+        <!-- Partie image de la page  -->
+        <div class="imag">
+            <center>
+                <img src="img/football.png" width="80%">
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
